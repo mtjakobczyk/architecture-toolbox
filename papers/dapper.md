@@ -35,11 +35,19 @@ https://research.google/pubs/pub36356/
 #### Trace trees and spans
 > We tend to think of **a Dapper trace as a tree of nested RPCs**. However, our core data model is not restricted to our particular RPC framework; we also trace activities such as SMTP sessions in Gmail, HTTP requests from the outside world, and outbound queries to SQL servers.
 
+![image](https://user-images.githubusercontent.com/6499023/121695074-02423f80-cacb-11eb-92a1-22e6e77c9f00.png)
+
 ##### Spans
 > In a Dapper trace tree, the tree nodes are basic units of work which we refer to as spans. The edges indicate a casual relationship between a span and its parent span.
-
-![image](https://user-images.githubusercontent.com/6499023/121695074-02423f80-cacb-11eb-92a1-22e6e77c9f00.png)
 
 > **a span** is also a simple log of timestamped records which encode the span’s start and end time, any RPC timing data, and zero or more application-specific annotations
 
 > Dapper records **a human-readable span name** for each span, as well as **a span id** and **parent id** in order to reconstruct the causal relationships between the individual spans in a single distributed trace. Spans created without a parent id are known as root spans. All spans associated with a specific trace also share a common **trace id**. All of these ids are probabilistically unique 64-bit integers.
+
+![image](https://user-images.githubusercontent.com/6499023/121695314-3f0e3680-cacb-11eb-8b37-64aa6dfc6778.png)
+
+> Span start and end times as well as any RPC timing information are recorded by Dapper’s RPC library instrumentation.
+
+> every RPC span contains annotations from both the client and server processes, making two-host spans the most common ones.
+
+#### Instrumentation
