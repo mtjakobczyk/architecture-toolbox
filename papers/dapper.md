@@ -38,4 +38,8 @@ https://research.google/pubs/pub36356/
 ##### Spans
 > In a Dapper trace tree, the tree nodes are basic units of work which we refer to as spans. The edges indicate a casual relationship between a span and its parent span.
 
+![image](https://user-images.githubusercontent.com/6499023/121695074-02423f80-cacb-11eb-92a1-22e6e77c9f00.png)
+
 > **a span** is also a simple log of timestamped records which encode the span’s start and end time, any RPC timing data, and zero or more application-specific annotations
+
+> Dapper records **a human-readable span name** for each span, as well as **a span id** and **parent id** in order to reconstruct the causal relationships between the individual spans in a single distributed trace. Spans created without a parent id are known as root spans. All spans associated with a specific trace also share a common **trace id**. All of these ids are probabilistically unique 64-bit integers.
