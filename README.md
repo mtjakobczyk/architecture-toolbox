@@ -26,5 +26,5 @@ There are two widely-used notations:
 A good take on their differences:
 > Archimate describes the structure of cities, while UML describes the structure of houses and office buildings
 
-Will there be a battle between Archimate and the UML? - Nick Malik
+Will there be a battle between Archimate and the UML? - Nick Malik  
 https://docs.microsoft.com/en-us/archive/blogs/nickmalik/will-there-be-a-battle-between-archimate-and-the-uml
