@@ -13,3 +13,18 @@ https://youtu.be/DngAZyWMGR0?t=243
 > Fundamental concepts or properties of a system in its environment embodied in its elements, relationships, and in the principles of its design and evolution.
 
 ISO 42010
+
+### Diagrams
+How to visualise Software Architecture?
+
+There are two widely-used notations: 
+- **Archimate**  
+    Archimate addresses better higher-level aspects such as business-to-application mapping or application collaboration for complex heterogeneous systems. Archimate views are primarily static and it is difficult to present the dynamic nature of the systems. Sometimes the runtime behavious at this level can be separately visualised with **BPMN**.
+- **UML**  
+    UML is used to present the composition of system components and their implementation in various degree of detail. UML offers a good selection of static and dynamic diagram types.
+    
+A good take on their differences:
+> Archimate describes the structure of cities, while UML describes the structure of houses and office buildings
+
+Will there be a battle between Archimate and the UML? - Nick Malik
+https://docs.microsoft.com/en-us/archive/blogs/nickmalik/will-there-be-a-battle-between-archimate-and-the-uml
