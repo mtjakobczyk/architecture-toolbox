@@ -107,3 +107,120 @@ Generalization is often introducing considerable degree of accidental complexity
 > Without a good understanding of the full range of technology, an architect is little more than a project manager.  
 
 > It is perfectly acceptable for team members to have more in-depth knowledge in their specific areas but it’s difficult to imagine how team members can have confidence in their architect if the architect doesn’t understand the technology.
+
+#### 27. There Is No ‘I’ in Architecture (Dave Quick)
+
+> Our egos can be our own worst enemy.
+
+> I suspect any experienced architect has fallen into at least one of these traps at some point:
+> 1. think they understand the requirements better than the customers
+> 2. view developers as resources hired to implement their ideas
+> 3. get defensive when their ideas are challenged
+> 4. ignore the ideas of others
+
+> Removing the ‘I’ from architecture removes a common source of failure that’s entirely your fault.
+
+#### 28. Get the 1,000-Foot View (Erik Doernenburg)
+
+> In an architecture diagram, little boxes represent entire systems and lines between them can mean anything: a dependency, the flow of data, or a shared resource such as a bus. These diagrams are a **30,000-foot view**, like a landscape seen from a plane.
+
+> Typically the only other view available is the source code, which is comparable to a **ground-level view**.
+
+> Both views fail to convey much information about the quality of the software: 
+> - one is too high level and 
+> - the other provides so much information that we cannot see structure.
+
+> Clearly, what is missing is a view in between—a **1,000-foot view**. This 1,000-foot view would provide information at the right level.
+
+#### 29. Try Before Choosing (Erik Doernenburg)
+
+> A stereotypical architect might gather all the information that can be gathered, then mull over it for a while, and finally decree the solution from the ivory tower for it to be implemented by the developers.
+
+> The architect should constantly be on the lookout for decisions that will have to be made soon
+
+> Trying two or even more approaches to the same problem requires more effort than making a decision upfront and then just implementing one. However, chances are that an upfront decision leads to a solution that is later recognized to be suboptimal.
+
+Prototype to make a decision!
+
+#### 30. Understand the Business Domain (Mark Richards)
+
+> Effective software architects understand not only technology but also the business domain of a problem space. 
+> 
+> Without business domain knowledge, it is difficult to understand the business problem, goals, and requirements, and therefore difficult to design an effective architecture to meet the requirements of the business.
+
+> As a software architect, always understand the goals of the company you are working with, and validate that the architecture can support these goals.
+
+> The most successful architects I know are those who have broad hands-on technical knowledge coupled with a strong knowledge of a particular domain
+
+#### 32. Give Developers Autonomy (Philip Nelson)
+
+> Most architects begin their careers as developers. An architect has new responsibilities and greater authority in determining how a system is built. 
+> 
+> As a developer you rarely get the time to sit back and really look at how the whole system fits together. As an architect, this is your main focus.
+
+> If you’re doing a great job of being an architect, you: 
+> - do need to watch closely enough to see that the design is being implemented as intended. 
+> - do not need to be standing over people’s shoulders to accomplish that goal. 
+> It’s reasonable to make suggestions when you see people struggling, but it’s even better if you create the environment where they come and ask you for suggestions.
+
+#### 35. Scope Is the Enemy of Success (Dave Quick)
+
+> Scope refers to a project’s size. How much time, effort, and resources? What functionality at what level of quality? How difficult to deliver? How much risk? What constraints exist? The answers define a project’s scope.
+
+> Expanding scope is the enemy of success because the probability of failure grows faster than expected
+
+> Strategies that can help to reduce or manage scope in real-world projects:
+> - Understand the real needs
+> - Divide and conquer - *Look for opportunities to divide up the work into smaller independent chunks*
+> - Prioritize - *Prioritization lets you deliver the most important requirements first*
+> - Deliver results as soon as possible
+
+> Complex architectures fail far more often than simpler architectures. Reducing project scope often results in a simpler architecture
+
+#### 36. Value Stewardship Over Showmanship (Barry Hawkins)
+
+> When an architect enters a project, there is an understandable desire to prove his or her worth.
+>
+> **Showmanship**, the act of appealing to your audience, is important in marketing, but it’s counterproductive to leading a software development project
+
+> Architects must win the respect of their team by providing solid leadership and by truly understanding the technical and business domain in which they are expected to operate.
+>
+> **Stewardship**, taking responsibility and care of another’s property, is the appropriate role of an architect
+
+> Value stewardship over showmanship; never forget that you are playing with other people’s money.
+
+#### 43. Context Is King (Edward Garson)
+
+> Context is king, and simplicity its humble servant. 
+> 
+> What this means in practical terms is that context is the only force that trumps simplicity when you’re making architectural decisions.
+
+> Good architecture is the product of decisions made within a context usually tainted with multiple **competing priorities**. 
+> Those competing priorities mean that sometimes **the most important decisions are not about what you put in, but rather what you omit**.
+
+#### 47. Welcome to the Real World (Gregor Hohpe)
+
+> Engineers like **precision**, especially software engineers who live in the realm of ones and zeros. They are used to working with binary decisions, one or zero, true or false, yes or no. Everything is clear and consistent, guaranteed by foreign key constraints, atomic transactions, and checksums.
+
+> The real world is not quite that binary. Widely distributed systems introduce a whole new set of inconsistencies into the game
+
+> Say goodbye to the good old predictive call-stack architecture, where you get to define what happens when and in what order. 
+> 
+> Instead, be ready to **respond to events at any time in any order**, regaining your context as needed. 
+> 
+> Avoid complete chaos by modeling your application using **event-driven process chains** or **state models**. Reconcile errors through compensation, retry, or tentative operations.
+
+#### 50. Architects’ Focus Is on the Boundaries and Interfaces (Einar Landre)
+
+> From separation of concern we get encapsulation, and from encapsulation we get boundaries and interfaces.
+> 
+> Here the concept of **bounded contexts** and **context mapping**, as described by Eric Evans in his book Domain-Driven Design (Addison-Wesley Professional), comes to the rescue.
+> 
+> A **bounded context** is an area where a model or concept is uniquely defined. With the bounded contexts identified and drawn up on the whiteboard, it’s time to start to draw the relationships between the contexts. The result from this exercise is a **context map**, a collection of bounded contexts and the interfaces between them.
+
+#### 51. Empower Developers (Timothy High)
+
+> The role of an architect is usually to impose constraints, but you also have the opportunity to **be an enabler**.
+> 
+> You should do everything possible to empower your developers. Make sure developers have the **tools** they need. Make sure they have the **skills** they need. Let developers make **their own decisions** wherever it won’t contradict the overall goal of the software design. Protect developers from **nonessential parts** of their job
+
