@@ -3,7 +3,7 @@
 
 Source for all quotes: https://learning.oreilly.com/library/view/97-things-every/9780596800611/
 
-### My notes and favourite quotes
+### My notes and my favourite quotes from the book
 
 #### 1. Don’t Put Your Resume Ahead of the Requirements (Nitin Borwankar)
 > It’s often difficult to resist utilizing a solution that is new and cool, even when it’s inappropriate for the current situation.
@@ -224,3 +224,106 @@ Prototype to make a decision!
 > 
 > You should do everything possible to empower your developers. Make sure developers have the **tools** they need. Make sure they have the **skills** they need. Let developers make **their own decisions** wherever it won’t contradict the overall goal of the software design. Protect developers from **nonessential parts** of their job
 
+#### 52. Record Your Rationale (Timothy High)
+
+> Software architecture is all about choosing the right tradeoffs between various quality attributes, cost, time, and other factors. 
+> 
+> It should be made clear to you, your managers, developers, and other software stakeholders why one solution was chosen over another and what tradeoffs this entailed.
+
+> The documentation should answer the basic questions “What was that decision we made?”, and “Why did we make that decision?”. A secondary question that is often asked and should be documented is “What other solutions were considered, and why were they rejected?”
+
+
+#### 53. Challenge Assumptions—Especially Your Own (Timothy High)
+
+> Best practices in software architecture state that you should document the rationale behind each decision that is made, especially when that decision involves a tradeoff. This practice is valuable because listing these factors helps highlight assumptions.
+>
+> It is important to make these assumptions visible and explicit for the sake of posterity and for future re-evaluation
+> 
+> Very often assumptions are based on “historical reasons,” opinion, developer lore, FUDs, or even “something I heard in the hallway”
+
+#### 55. Pattern Pathology (Chad LaVigne)
+
+> Design patterns are excellent tools for mitigating necessary complexity, but like all tools, they can be misused. 
+> 
+> Design patterns become a problem when we make them the proverbial hammer with which we must strike every nail. Be careful that your appreciation for patterns doesn’t become an infatuation that has you introducing solutions that are more complicated than they need to be.
+> 
+> Stamping patterns all over a project unnecessarily is over-engineering.
+
+#### 57. Focus on Application Support and Maintenance (Mncedisi Kasper)
+
+> The support and maintenance of an application should never, ever be an afterthought.
+> 
+> You should pay a lot of attention to the problems of support and maintenance when you’re designing
+
+#### 60. Start with a Walking Skeleton (Clint Shank)
+
+> One very useful strategy for implementinh, verifying, and evolving an application architecture is to start with what Alistair Cockburn calls a **walking skeleton** - a minimal, end-to-end implementation of the system that links together all the main architectural components. 
+
+> Start with a walking skeleton, keep it running, and grow it incrementally. The bigger the system, the more important it is to use this strategy.
+
+#### 61. It Is All About The Data (Paul W. Homer)
+> Data sits at the core of most problems. Business domain problems creep into the code via the data.
+> 
+> From a design perspective, the critical issue for most systems is to **get the right data into the system at the right time**.
+>
+> This data-oriented perspective—seeing the system entirely by the structure of its underlying information—can reduce even the most complicated system down to a tangible collection of details.
+
+#### 65. Your System Is Legacy; Design for It (Dave Anderson)
+
+> Even if your system is bleeding edge and developed in the latest technology, it will be legacy to the next guy. Deal with it!
+>
+> Legacy tends to be a bad word in software circles, but in reality, all software systems should endure the tag. It is not a bad thing, as it may indicate that your system is durable, meets expectations, and has business value.
+>
+> If you expect your system to go into production and survive, even for a few months, then you need to accept that maintenance developers will need to fix things up.
+
+#### 69. Shortcuts Now Are Paid Back with Interest Later (Scot Mcphee)
+
+> Shortcuts taken during the initial development phase of a project can result in significant maintenance costs later.
+>
+> A serious architectural mistake is to adapt an existing system for a purpose that it is not fit for, on the basis that using an existing system somehow reduces costs.
+> 
+> Poorly designed features can become the foundation for future features, making corrective action later even more costly.
+
+#### 70. “Perfect” Is the Enemy of “Good Enough” (Greg Nyberg)
+
+> Don’t give in to the temptation to make your design, or your implementation, perfect! The search for perfection in design and implementation leads, in my opinion, to overdesigned and obfuscated solutions that are, in the end, harder to maintain.
+>
+> Aim for “good enough” and stop when you’ve achieved it. Good enough means that the remaining imperfections do not impact system functionality, maintainability, or performance in any meaningful way.
+
+#### 87. Pay Down Your Technical Debt (Burkhardt Hufnagel)
+
+> Generally, the business people will want the change made as quickly as possible, while the developers and testers will be more interested in taking the time to properly design, implement, and test the change before delivering it to the customers.
+>
+> As the project’s architect, you’ll have to decide which makes more sense and then convince the decision makers to take your advice; and, as with most architectural issues, there is a tradeoff involved
+
+> If you believe the system is reasonably stable, then it may make sense to go the “quick and dirty” route and get the change into production quickly. That’s fine, but you need to know that in doing so your project is incurring some “technical debt” that must be repaid later.
+> 
+> For technical debt, interest takes the form of instability in the system, and increased maintenance costs due to the hacked-in changes and lack of proper design, documentation, and/or tests. 
+
+#### 88. Don’t Be a Problem Solver (Eben Hewitt)
+
+> With some exceptions, architects used to be developers. Developers get rewarded for solving programming problems, which are more local in scope than architectural problems.
+> 
+> Architects and developers learn to enter problem-solving mode immediately. But sometimes the best solution is no solution.
+> 
+> Because architects tend to immediately enter problem-solving mode, we forget, or rather have never learned how, to **interrogate the problem itself**
+>
+> We must learn, like a telephoto lens, to **zoom in** and **zoom out**, in order to **ensure that the question is really framed properly**, and that we’re not merely accepting what we’re given.
+
+#### 96. For the End User, the Interface Is the System (Vinayak Hegde)
+
+> There are too many good products hidden behind bad user-interfaces.
+>
+> If the quality of the user’s experience while interacting with your product suffers, then his impression of your product will suffer, no matter how technologically advanced and path-breaking your product might be.
+
+> **User interaction** should be an integral part of the decision-making process for architecture tradeoffs and internal product documentation as much as robustness and performance.
+
+#### 97. Great Software Is Not Built, It Is Grown (Bill de hÓra)
+
+> Have a grand vision, but not a grand design.
+> 
+> Resist trying to design a large complete system to “meet or exceed” the known requirements and desired properties, no matter how tempting that might be.
+
+> Design the smallest system you can, help deliver it, and let it evolve toward the grand vision. 
+> 
+> Inducing a system to evolve means starting with a small running system, a working subset of the intended architecture—the simplest thing that could possibly work.
