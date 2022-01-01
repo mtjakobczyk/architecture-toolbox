@@ -1,3 +1,11 @@
+This repository serves as my notepad for architecture-related topics.
+
+Here are some loose notes after having read various books and papers:
+- :books: [97 Things Every Software Architect Should Know](books/97-things-architect-should-know.md)
+- :clipboard: [Dapper, a Large-Scale Distributed Systems Tracing Infrastructure](papers/dapper.md)
+
+---
+
 ### Architecture
 What is Software Architecture?
 
@@ -13,6 +21,8 @@ https://youtu.be/DngAZyWMGR0?t=243
 > Fundamental concepts or properties of a system in its environment embodied in its elements, relationships, and in the principles of its design and evolution.
 
 ISO 42010
+
+---
 
 ### Diagrams
 How to visualise Software Architecture?
