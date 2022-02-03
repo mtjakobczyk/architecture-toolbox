@@ -25,4 +25,4 @@ There are two approaches to threat modell an on-going project:
 - **Prepare a complete Threat Model** while drafting a solution design and later change it or drill down it as needed
 - **Evolve a Threat Model** along with the on-going development consecutively adding new elements 
 
-When working in an agile way, threat model in each spring along the development features [source](https://youtu.be/7jB5OS6mepU?t=1119)
+When working in an agile way, "work the features being built" meaning: adapt the threat model in each spring along the development features [source](https://youtu.be/7jB5OS6mepU?t=1119)
