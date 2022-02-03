@@ -13,7 +13,7 @@ The S.T.R.I.D.E. is a security threat model.
 > 
 > -- from "Threat Modeling: Designing for Security" by Adam Shostack
 
-- **Spoofing** happens when an actor (user or system) claims they are someone else or something else
+- **Spoofing** happens when an actor (user or system) pretends they are someone else or something else
 - **Tampering** happens when data (or system configuration) is altered in an unauthorised way due to some (external) interference 
 - **Repudiation** happens when an actor (user or system) claims they have not performed an action (even though they in reality did)
 - **Denial of Service** happens when a system becomes unavailable or its performance degrades
